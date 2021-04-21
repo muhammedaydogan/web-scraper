@@ -44,6 +44,8 @@ export class WatsonsAdapter implements IWebsite {
       category,
       brand
     );
+    // Turn products to productsCompatible
+    // Fill here
 
     let productsDemo = [
       {

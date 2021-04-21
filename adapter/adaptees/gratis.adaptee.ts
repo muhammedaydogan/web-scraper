@@ -44,6 +44,8 @@ export class GratisAdapter implements IWebsite {
       category,
       brand
     );
+    // Turn products to productsCompatible
+    // Fill here
     let productsCompatible = [
       {
         website: this.website,
