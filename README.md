@@ -4,4 +4,4 @@ Web Scraper For Make Up Products
 
 Trendyol - Gratis - Watsons 
 
-This is just a module. Run tsc then use the generated module file to your project.
+This is just a module. Run tsc then use the generated module file in your own project.
