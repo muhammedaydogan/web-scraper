@@ -151,8 +151,8 @@ export class Trendyol implements IWebsite {
                   if (e.indexOf("window.__SEARCH_APP_INITIAL_STATE__") != -1) {
                     e = JSON.parse(e.substring(e.indexOf("{")));
                     // ! MAIN INFO SOURCE
-                    console.log(e);
-                    console.log(e.products[0].price);
+                    // console.log(e);
+                    // console.log(e.products[0].price);
                     // console.log(e.products[0].images);
                     for (const image of e.products[i].images) {
                       // console.log(image);
@@ -184,21 +184,8 @@ export class Trendyol implements IWebsite {
         console.log(err.message);
       });
 
-    console.log(data);
+    // console.log(data);
     return data;
-
-    let productsDemo = [
-      {
-        website: this.website,
-        name: "string",
-        price: 123,
-        currency: "string",
-        brand: "string",
-        freeShipping: true,
-        imageLinks: ["img1", "img2"],
-      },
-    ];
-    return productsDemo;
   }
 
   private async requestProduct(searchKey: string) {
@@ -317,7 +304,7 @@ export class Trendyol implements IWebsite {
   }
 }
 
-const extractData = async (dom) => {
+const extractData = async (dom: any) => {
   let data = [];
   let searchResult = dom.getElementsByClassName("prdct-cntnr-wrppr")[0]
     .childNodes;
@@ -361,8 +348,8 @@ const extractData = async (dom) => {
             if (e.indexOf("window.__SEARCH_APP_INITIAL_STATE__") != -1) {
               e = JSON.parse(e.substring(e.indexOf("{")));
               // ! MAIN INFO SOURCE
-              console.log(e);
-              console.log(e.products[0].price);
+              // console.log(e);
+              // console.log(e.products[0].price);
               // console.log(e.products[0].images);
               for (const image of e.products[i].images) {
                 // console.log(image);
