@@ -22,7 +22,8 @@ export class GratisAdapter implements IWebsite {
   }> {
     let products = this.gratis.searchGratis(searchKey);
     // Turn products to productsCompatible
-    // Fill here
+    // TODO Fill Here
+
     let productsCompatible = [] as Product[];
     let result = {
       success: true,
@@ -45,7 +46,8 @@ export class GratisAdapter implements IWebsite {
       brand
     );
     // Turn products to productsCompatible
-    // Fill here
+    // TODO Fill Here
+
     let productsCompatible = [
       {
         website: this.website,

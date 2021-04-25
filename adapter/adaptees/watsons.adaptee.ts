@@ -22,7 +22,8 @@ export class WatsonsAdapter implements IWebsite {
   }> {
     let products = await this.watsons.searchWatsons(searchKey);
     // Turn products to productsCompatible
-    // Fill here
+    // TODO Fill Here
+
     let productsCompatible = [] as Product[];
     let result = {
       success: true,
@@ -45,7 +46,7 @@ export class WatsonsAdapter implements IWebsite {
       brand
     );
     // Turn products to productsCompatible
-    // Fill here
+    // TODO Fill Here
 
     let productsDemo = [
       {

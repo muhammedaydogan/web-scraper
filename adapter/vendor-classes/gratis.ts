@@ -2,6 +2,8 @@ import { IWebsiteGratis } from "../interfaces/website-gratis.interface";
 
 export class Gratis implements IWebsiteGratis {
   async searchGratis(searchKey: string): Promise<{}> {
+    // TODO Fill Here
+
     return [
       {
         name: "gratis",
@@ -19,6 +21,8 @@ export class Gratis implements IWebsiteGratis {
     category: string,
     brand: string
   ): Promise<{}> {
+    // TODO Fill Here
+
     return { data: "gratis featured search" };
   }
 }
