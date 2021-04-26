@@ -10,8 +10,8 @@ This is just a module. Run tsc then use the generated module file in your own pr
 
 put backend to the same folder like the following order.
 
--> folder/
---> cosmos-backend/
+-> folder/  
+--> cosmos-backend/  
 --> web-scraper/
 
 then run this command in project root folder: `tsc -w`
