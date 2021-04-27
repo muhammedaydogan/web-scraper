@@ -3,7 +3,9 @@ import { Product } from "../../product.interface";
 export interface IWebsite {
   website: string;
   searchProduct(
-    searchKey: string
+    searchKey: string,
+    category: string,
+    brand: string
   ): Promise<{
     success: boolean;
     categories: [];

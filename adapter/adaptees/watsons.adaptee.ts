@@ -12,7 +12,9 @@ export class WatsonsAdapter implements IWebsite {
   }
 
   async searchProduct(
-    searchKey: string
+    searchKey: string,
+    category: string,
+    brand: string
   ): Promise<{
     success: boolean;
     categories: [];
