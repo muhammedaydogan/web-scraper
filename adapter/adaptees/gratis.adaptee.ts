@@ -22,15 +22,24 @@ export class GratisAdapter implements IWebsite {
     data: Product[];
     error: string;
   }> {
-    let products = this.gratis.searchGratis(searchKey);
+    let products = await this.gratis.searchGratis(searchKey,category, brand);
     // Turn products to productsCompatible
-    // TODO Fill Here
-
     let productsCompatible = [] as Product[];
+    products.data.forEach(product => {
+      productsCompatible.push({
+        website: this.website,
+        name: product['title'],
+        price: product['price'],
+        currency: product['currency'],
+        brand: '',
+        freeShipping: false,
+        imageLinks: [product['image_link']],
+      });
+    });
     let result = {
       success: true,
-      categories: [] as [],
-      brands: [] as [],
+      categories: products.categories,
+      brands: products.brands,
       data: productsCompatible,
       error: "",
     };
