@@ -49,17 +49,12 @@ async function getProducts(product_cards: any, res) {
   res.data = [] as any;
   let productPromise = (product_card) => new Promise(async (resolve, reject) => {
     let data = {};
-    data['brand'] = await product_card.$eval('.productbox-desc.text-left.mb-1 > span', text => text.innerHTML.replace(/(\r\n\t|\n|\r|\t)/gm, ""));
+    data['brand'] = await product_card.$eval('.productbox-desc.text-left.mb-1 > span', text => text.innerHTML.replace(/(\r\n\t|\n|\r|\t)/gm, "").trim());
     data['title'] = await product_card.$eval('.productbox-desc.text-left.mb-1', text => text.innerHTML);
-    data['title'] = data['title'].substr(data['title'].lastIndexOf("</span>\n") + 8);
+    data['title'] = data['title'].substr(data['title'].lastIndexOf("</span>\n") + 8).trim();
     let dom = parser.parseFromString(data['title']);
-    // let spans = await data['title'].
     console.log(dom.children);
-    // console.log(spans);
-    // let price_info = await product_card.$('.occ-product-gratis-card-new-wrapper');
-    // let price_amount = await price_info.$eval('.gr-price__amount', text => text.textContent);
-    // let price_fractional = await price_info.$eval('.gr-price__fractional', text => text.textContent);
-    // data['price'] = parseFloat(price_amount) + parseFloat(price_fractional.replace(",", "0."));
+   
     
     let price = await product_card.$eval('.list-inline-item.product-box-price.text-site-pink.roboto-medium', text => text.textContent);
     data['price'] = parseFloat(price.replace(/(\r\n\t|\n|\r|\t|\s)/gm, "").replace(",", "."));
