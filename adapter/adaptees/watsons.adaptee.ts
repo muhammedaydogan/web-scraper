@@ -30,7 +30,7 @@ export class WatsonsAdapter implements IWebsite {
         name: product['title'],
         price: product['price'],
         currency: product['currency'],
-        brand: '',
+        brand: product['brand'],
         freeShipping: false,
         imageLinks: [product['image_link']],
       });
