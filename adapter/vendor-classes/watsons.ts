@@ -18,7 +18,7 @@ export class Watsons implements IWebsiteWatsons {
       searchKey.replace(" ", "%20");
       console.log(searchKey);
       let browser = await puppeteer.launch({
-        // headless: false,
+        headless: false,
         args: ["--disable-setuid-sandbox"],
         'ignoreHTTPSErrors': true
     });
@@ -95,7 +95,7 @@ async function getCategories(category_list: any, res) {
   res.categories = [] as any;
   let categoryPromise = (category) => new Promise(async (resolve, reject) => {
     let data = {};
-    data['link'] = await category.$eval('a', text => text.href);
+    data['url'] = await category.$eval('a', text => text.href);
     let outer_html = await category.$eval('a', text => text.outerHTML);
     let a = outer_html.indexOf('data-spec-id="');
     let b = outer_html.indexOf('">\n');
