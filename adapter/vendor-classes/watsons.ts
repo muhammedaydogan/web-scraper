@@ -5,7 +5,7 @@ const parser = new domparser();
 import { IWebsiteWatsons } from "../interfaces/website-watsons.interface";
 
 export class Watsons implements IWebsiteWatsons {
-  async searchWatsons(searchKey: string): Promise<{}> {
+  async searchWatsons(searchKey: string, categoryId: string, brandId: string): Promise<{}> {
     let res = {
       success: true,
       categories: [] as any,
@@ -23,7 +23,7 @@ export class Watsons implements IWebsiteWatsons {
         'ignoreHTTPSErrors': true
     });
       let page = await browser.newPage();
-      await page.goto(`https://www.watsons.com.tr/search?q=${searchKey}&personaclick_search_query=${searchKey}&personaclick_input_query=${searchKey}`, {
+      await page.goto(`https://www.watsons.com.tr/search?q=${searchKey}&personaclick_search_query=${searchKey}&personaclick_input_query=${searchKey}&specs=${categoryId},${brandId}`, {
         waitUntil: "networkidle2"
       });
       let category_list = await page.$$('.filter-item.kategori > div > ul > li');
@@ -33,6 +33,8 @@ export class Watsons implements IWebsiteWatsons {
       await getCategories(category_list, res);
       await getBrands(brand_list, res);
       await getProducts(product_cards, res);
+      await page.waitForTimeout(5000);
+
       await browser.close();
     
     } catch (err) {
@@ -47,11 +49,13 @@ async function getProducts(product_cards: any, res) {
   res.data = [] as any;
   let productPromise = (product_card) => new Promise(async (resolve, reject) => {
     let data = {};
+    data['brand'] = await product_card.$eval('.productbox-desc.text-left.mb-1 > span', text => text.innerHTML.replace(/(\r\n\t|\n|\r|\t)/gm, ""));
     data['title'] = await product_card.$eval('.productbox-desc.text-left.mb-1', text => text.innerHTML);
+    data['title'] = data['title'].substr(data['title'].lastIndexOf("</span>\n") + 8);
     let dom = parser.parseFromString(data['title']);
-    let spans = dom.getElementsByTagName('span');
-    // console.log(dom.getAttribute());
-    // console.log(dom.rawHTML[4]);
+    // let spans = await data['title'].
+    console.log(dom.children);
+    // console.log(spans);
     // let price_info = await product_card.$('.occ-product-gratis-card-new-wrapper');
     // let price_amount = await price_info.$eval('.gr-price__amount', text => text.textContent);
     // let price_fractional = await price_info.$eval('.gr-price__fractional', text => text.textContent);
@@ -65,7 +69,7 @@ async function getProducts(product_cards: any, res) {
     resolve(data);
   });
 
-  for (let i = 1; i < product_cards.length; i++) {
+  for (let i = 21; i < product_cards.length; i++) {
     let product = await productPromise(product_cards[i]);
     console.log(product);
     res.data.push(product);

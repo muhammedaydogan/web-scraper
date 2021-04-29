@@ -22,7 +22,7 @@ export class WatsonsAdapter implements IWebsite {
     data: Product[];
     error: string;
   }> {
-    let products = await this.watsons.searchWatsons(searchKey);
+    let products = await this.watsons.searchWatsons(searchKey, category, brand);
     let productsCompatible = [] as Product[];
     products.data.forEach(product => {
       productsCompatible.push({
