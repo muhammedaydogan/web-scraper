@@ -1,0 +1,322 @@
+{"brands": [
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,859",
+      "id": "859",
+      "name": "Alix Avien"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,966",
+      "id": "966",
+      "name": "Cecile"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,995",
+      "id": "995",
+      "name": "Deborah Milano"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,5167",
+      "id": "5167",
+      "name": "E.L.F."
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,5128",
+      "id": "5128",
+      "name": "Essence"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,5472",
+      "id": "5472",
+      "name": "First Time"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,1041",
+      "id": "1041",
+      "name": "Flormar"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,1050",
+      "id": "1050",
+      "name": "Golden Rose"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,5166",
+      "id": "5166",
+      "name": "I Heart Revolution"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,4974",
+      "id": "4974",
+      "name": "Kerimcan Durmaz"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,1098",
+      "id": "1098",
+      "name": "L'Oreal Paris"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,4804",
+      "id": "4804",
+      "name": "Lottie London"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,1104",
+      "id": "1104",
+      "name": "Max Factor"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,1108",
+      "id": "1108",
+      "name": "Maybelline New York"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,5190",
+      "id": "5190",
+      "name": "Miss Cop"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,5092",
+      "id": "5092",
+      "name": "New Well"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,1140",
+      "id": "1140",
+      "name": "Note"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,5019",
+      "id": "5019",
+      "name": "Nyx Professional Makeup"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,1158",
+      "id": "1158",
+      "name": "Pastel"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,1351",
+      "id": "1351",
+      "name": "Revlon"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,4798",
+      "id": "4798",
+      "name": "Revolution"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,1362",
+      "id": "1362",
+      "name": "Rimmel London"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,5751",
+      "id": "5751",
+      "name": "Show By Pastel"
+    },
+    {
+      "link": "https://www.watsons.com.tr/search?q=ruj&personaclick_search_query=ruj&personaclick_input_query=ruj&specs=4810,5764",
+      "id": "5764",
+      "name": "The Pink Ellys"
+    }
+  ],
+  "data": [
+    {
+      "website": "Watsons",
+      "name": "Ruj Ambre",
+      "price": 14.95,
+      "currency": "₺",
+      "brand": "Miss Cop",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://img-watsons.mncdn.com/mnresize/600/600/Content/Images/Originals/0313124_0.png"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Ruj Candy",
+      "price": 14.95,
+      "currency": "₺",
+      "brand": "Miss Cop",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://img-watsons.mncdn.com/mnresize/600/600/Content/Images/Originals/0313128_0.png"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Mattever Ruj 04",
+      "price": 28.25,
+      "currency": "₺",
+      "brand": "Note",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://img-watsons.mncdn.com/mnresize/600/600/Content/Images/Originals/0289396_0.jpeg"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Mattever Ruj 08",
+      "price": 28.25,
+      "currency": "₺",
+      "brand": "Note",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://img-watsons.mncdn.com/mnresize/600/600/Content/Images/Originals/0289400_0.jpeg"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Mattever Ruj 17",
+      "price": 28.25,
+      "currency": "₺",
+      "brand": "Note",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://img-watsons.mncdn.com/mnresize/600/600/Content/Images/Originals/0289412_0.jpeg"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Ruj Vieux Rose",
+      "price": 14.95,
+      "currency": "₺",
+      "brand": "Miss Cop",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://img-watsons.mncdn.com/mnresize/600/600/Content/Images/Originals/0313126_0.png"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Mattever Ruj 06",
+      "price": 28.25,
+      "currency": "₺",
+      "brand": "Note",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://img-watsons.mncdn.com/mnresize/600/600/Content/Images/Originals/0289398_0.jpeg"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Mattever Ruj 02",
+      "price": 28.25,
+      "currency": "₺",
+      "brand": "Note",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://cdn-watsons.mncdn.com/Themes/Watsons/Content/_images/default-image.jpg"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Mattever Ruj 12",
+      "price": 28.25,
+      "currency": "₺",
+      "brand": "Note",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://cdn-watsons.mncdn.com/Themes/Watsons/Content/_images/default-image.jpg"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Klasik Ruj No:12",
+      "price": 17.95,
+      "currency": "₺",
+      "brand": "Pastel",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://cdn-watsons.mncdn.com/Themes/Watsons/Content/_images/default-image.jpg"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Klasik Ruj No:10",
+      "price": 17.95,
+      "currency": "₺",
+      "brand": "Pastel",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://cdn-watsons.mncdn.com/Themes/Watsons/Content/_images/default-image.jpg"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Klasik Ruj No:28",
+      "price": 17.95,
+      "currency": "₺",
+      "brand": "Pastel",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://cdn-watsons.mncdn.com/Themes/Watsons/Content/_images/default-image.jpg"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Klasik Ruj No:11",
+      "price": 17.95,
+      "currency": "₺",
+      "brand": "Pastel",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://cdn-watsons.mncdn.com/Themes/Watsons/Content/_images/default-image.jpg"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Klasik Ruj No:20",
+      "price": 17.95,
+      "currency": "₺",
+      "brand": "Pastel",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://cdn-watsons.mncdn.com/Themes/Watsons/Content/_images/default-image.jpg"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Klasik Ruj No:21",
+      "price": 17.95,
+      "currency": "₺",
+      "brand": "Pastel",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://cdn-watsons.mncdn.com/Themes/Watsons/Content/_images/default-image.jpg"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Powder Matte Ruj Lust",
+      "price": 35.95,
+      "currency": "₺",
+      "brand": "Revolution",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://cdn-watsons.mncdn.com/Themes/Watsons/Content/_images/default-image.jpg"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Likit Mat Ruj Bonny",
+      "price": 21.25,
+      "currency": "₺",
+      "brand": "The Pink Ellys",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://cdn-watsons.mncdn.com/Themes/Watsons/Content/_images/default-image.jpg"
+      ]
+    },
+    {
+      "website": "Watsons",
+      "name": "Klasik Ruj No:16",
+      "price": 17.95,
+      "currency": "₺",
+      "brand": "Pastel",
+      "freeShipping": false,
+      "imageLinks": [
+        "https://cdn-watsons.mncdn.com/Themes/Watsons/Content/_images/default-image.jpg"
+      ]
+    }
+  ]}
