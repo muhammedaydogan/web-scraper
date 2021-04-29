@@ -22,7 +22,9 @@ export class WatsonsAdapter implements IWebsite {
     data: Product[];
     error: string;
   }> {
-    let products = await this.watsons.searchWatsons(searchKey,this.trendyol2WatsonsCategories.hasOwnProperty(category) ? this.trendyol2WatsonsCategories[category]: '4810', brand);
+    let products = await this.watsons.searchWatsons(searchKey,
+      this.trendyol2WatsonsCategories.hasOwnProperty(category) ? this.trendyol2WatsonsCategories[category]: '4810',
+      this.trendyol2WatsonsBrands.hasOwnProperty(brand) ? trendyol2WatsonsBrands[brand] : '');
     let productsCompatible = [] as Product[];
     products.data.forEach(product => {
       productsCompatible.push({
@@ -78,12 +80,8 @@ export class WatsonsAdapter implements IWebsite {
     '109101': '6518',
     '108970': '6516',
     '143962': '6516'
-
-
-
-
-
   }
+  trendyol2WatsonsBrands = {'476': '1108', '568': '1098', '988': '1041', '624': '1158', '101666': '1050', '102168': '1119', '104624': '5092', '102040': '5128', '104618': '966', '475': '1104', '104729': '1093', '132515': '4798', '104727': '1362', '108750': '5764', '104617': '859', '102471': '1078', '888': '1351', '111520': '5166', '109061': '4165', '102420': '1082', '105288': '881', '862': '1507', '472': '1043', '102421': '1434', '101567': '1478', '102504': '902', '102011': '947', '102503': '5258', '102661': '1502', '108813': '4974', '101658': '1070', '886': '934', '102461': '1151', '132517': '5195'}
 
   async searchProductFeatured(
     searchKey: string,

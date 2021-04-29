@@ -86,7 +86,7 @@ export class Gratis implements IWebsiteGratis {
       //   }
       // }
       await getProducts(product_cards, res);
-      await page.screenshot({ path: 'screenshot.png' });
+      // await page.screenshot({ path: 'screenshot.png' });
 
       await browser.close();
     
@@ -105,10 +105,17 @@ async function getProducts(product_cards: any, res) {
     let data = {};
     data['title'] = await product_card.$eval('.title', text => text.textContent);
     let price_info = await product_card.$('.occ-product-gratis-card-new-wrapper');
-    let price_amount = await price_info.$eval('.gr-price__amount', text => text.textContent);
+    try {
+      let price_amount = await price_info.$eval('.gr-price__amount', text => text.textContent);
     let price_fractional = await price_info.$eval('.gr-price__fractional', text => text.textContent);
     data['price'] = parseFloat(price_amount) + parseFloat(price_fractional.replace(",", "0."));
     data['currency'] = await product_card.$eval('.gr-price__currency', text => text.textContent);
+    } catch (error) {
+      data['price'] = -1;
+      data['currency'] = '';
+    }
+   
+    
     data['image_link'] = await product_card.$eval('.view > a > img', text => text.src);
     resolve(data);
   });

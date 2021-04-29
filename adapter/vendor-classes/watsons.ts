@@ -18,7 +18,7 @@ export class Watsons implements IWebsiteWatsons {
       searchKey.replace(" ", "%20");
       console.log(searchKey);
       let browser = await puppeteer.launch({
-        headless: false,
+        // headless: false,
         args: ["--disable-setuid-sandbox"],
         'ignoreHTTPSErrors': true
     });
@@ -33,7 +33,7 @@ export class Watsons implements IWebsiteWatsons {
       await getCategories(category_list, res);
       await getBrands(brand_list, res);
       await getProducts(product_cards, res);
-      await page.waitForTimeout(5000);
+      // await page.waitForTimeout(5000);
 
       await browser.close();
     
