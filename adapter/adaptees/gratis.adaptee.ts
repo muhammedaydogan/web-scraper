@@ -1,4 +1,4 @@
-import { Product } from "../../product.interface";
+import { Product } from "../interfaces/product.interface";
 import { IWebsite } from "../interfaces/website.interface";
 import { Gratis } from "../vendor-classes/gratis";
 
@@ -22,18 +22,18 @@ export class GratisAdapter implements IWebsite {
     data: Product[];
     error: string;
   }> {
-    let products = await this.gratis.searchGratis(searchKey,category, brand);
+    let products = await this.gratis.searchGratis(searchKey, category, brand);
     // Turn products to productsCompatible
     let productsCompatible = [] as Product[];
-    products.data.forEach(product => {
+    products.data.forEach((product) => {
       productsCompatible.push({
         website: this.website,
-        name: product['title'],
-        price: product['price'],
-        currency: product['currency'],
-        brand: '',
+        name: product["title"],
+        price: product["price"],
+        currency: product["currency"],
+        brand: "",
         freeShipping: false,
-        imageLinks: [product['image_link']],
+        imageLinks: [product["image_link"]],
       });
     });
     let result = {

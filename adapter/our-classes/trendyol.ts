@@ -3,7 +3,7 @@ import domparser from "dom-parser";
 
 const parser = new domparser();
 
-import { Product } from "../../product.interface";
+import { Product } from "../interfaces/product.interface";
 import { IWebsite } from "../interfaces/website.interface";
 
 const preventError = (x: Function) => {
